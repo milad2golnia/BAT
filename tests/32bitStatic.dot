@@ -1,0 +1,29 @@
+digraph{
+		"main" -> "__x86.get_pc_thunk.ax"
+		"main" -> "f"
+		"main"[label="\N\n"]
+		"f" -> "__x86.get_pc_thunk.ax"
+		"f" -> "g"
+		"f" -> "g"
+		"f" -> "h"
+		"f"[label="\N\n"]
+		"h" -> "__x86.get_pc_thunk.bx"
+		"h" -> "f"
+		"h" -> "__printf"
+		"h" -> "__printf"
+		"h" -> "i"
+		"h"[label="\N\n"]
+		"i" -> "__x86.get_pc_thunk.bx"
+		"i" -> "__printf"
+		"i" -> "puts"
+		"i"[label="\N\n"]
+		"puts"[label="\N\n"]
+		"__printf"[label="\N\n"]
+		"__x86.get_pc_thunk.bx"[label="\N\n"]
+		"g" -> "__x86.get_pc_thunk.bx"
+		"g" -> "h"
+		"g" -> "puts"
+		"g" -> "puts"
+		"g"[label="\N\n"]
+		"__x86.get_pc_thunk.ax"[label="\N\n"]
+}

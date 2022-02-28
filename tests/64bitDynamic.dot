@@ -1,0 +1,20 @@
+digraph{
+		"main" -> "f"
+		"main"[label="\N\n"]
+		"f" -> "g"
+		"f" -> "g"
+		"f" -> "h"
+		"f"[label="\N\n"]
+		"h" -> "f"
+		"h" -> "printf"
+		"h" -> "printf"
+		"h" -> "i"
+		"h"[label="\N\n"]
+		"i" -> "printf"
+		"i" -> "puts"
+		"i"[label="\N\n"]
+		"g" -> "h"
+		"g" -> "puts"
+		"g" -> "puts"
+		"g"[label="\N\n"]
+}

@@ -1,0 +1,53 @@
+digraph{
+		"main" -> "f"
+		"main"[label="\N\n"]
+		"f" -> "g"
+		"f" -> "g"
+		"f" -> "h"
+		"f"[label="\N\n"]
+		"h" -> "f"
+		"h" -> "__printf"
+		"h" -> "__printf"
+		"h" -> "i"
+		"h"[label="\N\n"]
+		"i" -> "__printf"
+		"i" -> "puts"
+		"i"[label="\N\n"]
+		"puts"[label="\N\n"]
+		"__printf" -> "__vfprintf_internal"
+		"__printf"[label="\N\n"]
+		"__vfprintf_internal" -> "(null)"
+		"__vfprintf_internal" -> "printf_positional"
+		"__vfprintf_internal"[label="\N\n"]
+		"printf_positional" -> "__parse_one_specmb"
+		"printf_positional" -> "__libc_scratch_buffer_grow_preserve"
+		"printf_positional" -> "__wcrtomb"
+		"printf_positional" -> "_IO_padn"
+		"printf_positional" -> "__free"
+		"printf_positional" -> "__free"
+		"printf_positional"[label="\N\n"]
+		"__free" -> "_int_free"
+		"__free"[label="\N\n"]
+		"_int_free"[label="\N\n"]
+		"_IO_padn" -> "_IO_vtable_check"
+		"_IO_padn"[label="\N\n"]
+		"_IO_vtable_check"[label="\N\n"]
+		"__wcrtomb" -> "_dl_mcount_wrapper_check"
+		"__wcrtomb"[label="\N\n"]
+		"_dl_mcount_wrapper_check"[label="\N\n"]
+		"__libc_scratch_buffer_grow_preserve" -> "__libc_realloc"
+		"__libc_scratch_buffer_grow_preserve"[label="\N\n"]
+		"__libc_realloc" -> "mremap_chunk"
+		"__libc_realloc"[label="\N\n"]
+		"mremap_chunk" -> "mremap"
+		"mremap_chunk"[label="\N\n"]
+		"mremap"[label="\N\nSyscall 25\n"]
+		"__parse_one_specmb" -> "read_int"
+		"__parse_one_specmb" -> "read_int"
+		"__parse_one_specmb"[label="\N\n"]
+		"read_int"[label="\N\n"]
+		"g" -> "h"
+		"g" -> "puts"
+		"g" -> "puts"
+		"g"[label="\N\n"]
+}

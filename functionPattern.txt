@@ -1,0 +1,9 @@
+8
+1 main
+2 printf printf
+3 printf printf printf
+4 printf printf printf printf
+2 puts printf
+3 main i printf
+2 f printf
+3 h g f
