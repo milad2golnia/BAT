@@ -1,3 +1,31 @@
+This project is a final part of one larger project. This is part 2 but the APIs of other parts are kept and you can examine them on your own:
+
+1. Phase 0: Extracting headers of ELF file. APIs are available in this part.
+2. Phase 1: Disassemble binary instructions. APIs are available in this part.
+3. Phase 2: Detect Vulnerabilities. Apis are available and also a simple test is provided at [bat](./bat.c) file
+
+- [BAT](#bat)
+  - [Changes of previous phase](#changes-of-previous-phase)
+    - [`./headers/display.h`](#headersdisplayh)
+    - [`./headers/codeDisassembler.h`](#headerscodedisassemblerh)
+  - [Function Names](#function-names)
+  - [Syscall](#syscall)
+  - [`WHAT`](#what)
+    - [`./bat.c`](#batc)
+    - [`./headers/symbolTableParser.h`](#headerssymboltableparserh)
+    - [`./headers/displaySymbolTable.h`](#headersdisplaysymboltableh)
+    - [`./headers/callGraph.h`](#headerscallgraphh)
+    - [`./headers/relocationParser`](#headersrelocationparser)
+    - [`./functionPattern.txt`](#functionpatterntxt)
+    - [`./syscallPattern.txt`](#syscallpatterntxt)
+    - [`./headers/dotToPngConverter.h`](#headersdottopngconverterh)
+    - [`./headers/vulnerabilitiesDetection.h`](#headersvulnerabilitiesdetectionh)
+  - [Compilation](#compilation)
+  - [Run](#run)
+    - [Optimization flags](#optimization-flags)
+    - [Static Detection of Vulnerabilities](#static-detection-of-vulnerabilities)
+    - [Target](#target)
+
 # BAT
 We can devide the documentaion of any software into two section:
 
